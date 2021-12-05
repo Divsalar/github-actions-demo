@@ -23,7 +23,6 @@ jobs:
           echo test, and deploy your project.
 
       - name: My Secret Variable
-        with: 
-          super_secret: ${{ secrets.CONNECTION_STRING }}
         env:
           super_secret: ${{ secrets.CONNECTION_STRING }}
+        run: echo CONNECTION_STRING
