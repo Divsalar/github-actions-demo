@@ -25,4 +25,4 @@ jobs:
       - name: My Secret Variable
         env:
           super_secret: ${{ secrets.CONNECTION_STRING }}
-        run: print super_secret
+        run: echo super_secret
