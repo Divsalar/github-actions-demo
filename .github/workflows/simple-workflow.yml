@@ -21,6 +21,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo clientId: ${{ fromJSON(secrets.AZURE_CREDENTIALS).clientId }}
+          echo clientSECRET: ${{ fromJSON(secrets.AZURE_CREDENTIALS).clientSecret }}
 
       - name: My Secret Variable
         env:
